@@ -1,0 +1,13 @@
+
+<div class="container">
+  <h1>Stupid Coaching: Answer</h1>
+  <form action="/answer" method="get">
+    <input type="text" name="question">
+    <input type="submit" value="Ask!">
+  </form>
+  <div class="coach_answer">
+    <p><%= "#{@answer}" %></p>
+    <p>- Your coach</p>
+  </div>
+  <%= link_to "Ask a question to your coach", ask_path %>
+</div>
